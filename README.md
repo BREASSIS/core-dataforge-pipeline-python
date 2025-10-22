@@ -25,9 +25,10 @@ Ideal para **data engineering, analytics e pipelines de dados críticos em produ
 
 ```mermaid
 graph TD
-    Sources[SQL / NoSQL / APIs] -->|Extract| DataForge[Pipeline Engine]
-    DataForge -->|Transform| Tasks[Processing Tasks (Python)]
-    DataForge -->|Load| Destinations[Data Warehouse / DB / Files]
-    DataForge -->|Event & Logs| EventHubX[EventHubX / GoBridge]
-    DataForge -->|Observability| TraceMatrix[TraceMatrix / Prometheus / Grafana]
-    DataForge -->|Secrets & Config| CoreVault[CoreVault]
+    Sources[SQL_NoSQL_APIs] -->|Extract| DataForge[Pipeline_Engine]
+    DataForge -->|Transform| Tasks[Processing_Tasks_Python]
+    DataForge -->|Load| Destinations[Data_Warehouse_DB_Files]
+    DataForge -->|Event_Logs| EventHubX[EventHubX_GoBridge]
+    DataForge -->|Observability| TraceMatrix[TraceMatrix_Prometheus_Grafana]
+    DataForge -->|Secrets_Config| CoreVault[CoreVault]
+
